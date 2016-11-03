@@ -4,7 +4,9 @@
   "description": "Using a mango database system",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "DEBUG=myapp.* nodemon server.js",
+    "test": "mocha",
+    "test:watch": "nodemon --exec mocha"
   },
   "repository": {
     "type": "git",
